@@ -1,0 +1,28 @@
+.header {
+    margin-bottom: 48px;
+    padding: 12px 0;
+    &__logo {
+        max-width: 137px;
+    }
+    
+}
+
+.menu {
+    &__item {
+        padding: 0 14px;
+        &-link {
+            font-family: $o-font-600, sans-serif;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 14px;
+            line-height: 19px;
+            color: $color-charade;
+            border-bottom: 1px solid transparent;
+            transition: all .5s;
+            &:hover {
+                color: $color-redical-red;
+                border-bottom: 1px solid $color-redical-red;
+            }
+        }
+    }
+}
