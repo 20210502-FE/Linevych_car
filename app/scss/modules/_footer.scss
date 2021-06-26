@@ -1,0 +1,10 @@
+.footer {
+    background-color: $color-mariner;
+    &__logo {
+        padding: 16px 0 17px;
+        max-width: 158px;
+    }
+    &__menu {
+        padding-top: 15px;
+    }
+}

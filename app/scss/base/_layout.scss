@@ -50,6 +50,11 @@
     text-align: center
 }
 
+.flex_basis-20{
+    flex-basis: 20%;
+    max-width: 20%;
+}
+
 .flex_basis-33 {
     flex-basis: 33.33%;
     max-width: 33.33%;
@@ -60,11 +65,28 @@
     max-width: 50%;
 }
 
+.flex_basis-75 {
+    flex-basis: 75%;
+    max-width: 75%;
+}
+
 .flex_basis-100 {
     flex-basis: 100%;
     max-width: 100%;
 }
 
+.position_relative {
+    position: relative;
+}
+
+.position_absolute {
+    position: absolute;
+}
+
 .uppercase {
     text-transform: uppercase;
+}
+
+.line-through {
+    text-decoration: line-through;
 }

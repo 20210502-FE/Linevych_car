@@ -1,0 +1,23 @@
+.comment {
+    margin-bottom: 100px;
+    background-color: rgba(52, 108, 217, 0.12);
+    &__content {
+        max-width: 400px;
+        margin: 0 auto;
+        &-text {
+            font-family: $o-font-600;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+            color: $color-mine-shaft;
+            margin-bottom: 30px;
+        }
+        &_author {
+            font-size: 16px;
+        }
+    }
+    &__img {
+        max-width: 640px;
+    }
+}

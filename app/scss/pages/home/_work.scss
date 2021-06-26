@@ -1,0 +1,43 @@
+.work {
+    margin-bottom: 101px;
+    &__title {
+        margin-bottom: 60px;
+    }
+    &__items {
+        margin-right: -56px;
+    }
+    &__item {
+        padding-right: 56px;
+        position: relative;
+        &-img {
+            max-width: 64px;
+            margin-bottom: 29px;
+        }
+        &-title {
+            font-family:$o-font-bold;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 22px;
+            color: $color-mine-shaft;
+            margin-bottom: 30px;
+        }
+        &-text {
+            font-family:$o-font-regular;
+        }
+       
+        &::after {
+            content: '';
+            position: absolute;
+            width: 36px;
+            height: 24px;
+            background-image: url(../assets/images/arrow-grey.svg);
+            background-repeat: no-repeat;
+            top: 25px;
+            right: 15px; 
+        } 
+        &:last-child::after {
+            display: none;
+        }
+    }
+}

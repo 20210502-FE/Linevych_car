@@ -1,0 +1,13 @@
+.banner {
+    margin-bottom: 277px;
+    &__title {
+        width: 440px;
+        margin-bottom: 33px;
+    }
+    &__img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 882px;
+    }
+}

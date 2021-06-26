@@ -1,0 +1,27 @@
+.articles {
+    margin-bottom: 100px;
+    &__title {
+        margin-bottom: 40px;
+    }
+    &__content {
+        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        max-width: 270px;
+        &-img {
+            max-width: 270px;
+            margin-bottom: 20px;
+        }
+    }
+    &__inner {
+        padding: 0 20px;
+        &-title {
+            font-size: 20px;
+            line-height: 26px;
+            color: $color-charade;
+            margin-bottom: 7px;
+        }
+        &-text {
+            margin-bottom: 20px;
+        }
+    }
+}
