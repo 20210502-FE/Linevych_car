@@ -1,0 +1,127 @@
+.tabs {
+    &__nav {
+        border-bottom: 2px solid $color-dusty-grey;
+        margin-bottom: 37px;
+    }
+    &__link {
+        font-family: $r-font-bold, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 64px;
+        color: $color-mine-shaft;
+        padding: 0 30px;        
+        transition: all .5s;
+        &:hover {
+            border-bottom: 5px solid $color-redical-red;
+        }
+    }
+    &__title {
+        font-family: $r-font-bold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 26px;
+        color: $color-charade;
+        margin-bottom: 15px;
+    }
+}
+
+.form {
+    &__controls {
+        margin-bottom: 15px;
+    }
+    &__login {
+        &-title {
+            font-family: $o-font-regular, sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            color: $color-mine-shaft;
+            margin-bottom: 10px;
+        }
+    }
+    &__input {
+        width: 390px;
+        height: 35px;
+        border: 1px solid $color-dusty-grey;
+        border-radius: 5px;
+        padding: 0 15px;
+        &-checkbox {
+            width: 20px;
+            height: 20px;
+            background: $color-mariner;
+            border: 1px solid $color-mariner;
+            border-radius: 4px;
+            margin-right: 7px;
+        }
+        &-50 {
+            width: 245px;
+            margin: 0 5px;
+            
+        }
+        &_register {
+            width: 500px;
+        }
+    }
+    &__forgot {
+        margin-bottom: 15px;
+        &-link {
+            font-family: $o-font-regular;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 22px;
+            color: $color-mariner;
+        }
+    }
+    &__label {
+        &-checkbox {
+            font-family: $o-font-regular;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 22px;
+            color: $color-mine-shaft;
+        }
+    }
+    &__gender {
+        margin-right: 20px;
+        &_radio {
+            background: #FFFFFF;
+            border: 1px solid #999999;
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+            position: relative;
+            top: 5px;
+        }
+    }
+    &__button {
+        font-family: $o-font-regular;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: $color-white;
+        background: $color-redical-red;
+        border-radius: 5px;
+        padding: 8px 42px 10px;
+        border: inherit;
+    }
+    &__info {
+        font-family: $o-font-regular, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;
+        color: $color-dusty-grey;
+        max-width: 410px;
+        margin: 0 auto 40px;
+        &-link {
+            color: $color-mariner;
+        }
+    }
+}
+

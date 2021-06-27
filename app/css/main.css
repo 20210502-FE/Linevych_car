@@ -379,10 +379,6 @@ body {
   transform: scale(1.1);
 }
 
-.product__inner {
-  height: 360px;
-}
-
 .product__content {
   padding-left: 20px;
 }
@@ -590,6 +586,8 @@ body {
   width: 168px;
   margin-right: 7px;
   cursor: pointer;
+  position: relative;
+  bottom: 4px;
 }
 
 .aside__search-text {
@@ -761,4 +759,138 @@ body {
   background-repeat: no-repeat;
   top: 18px;
   right: 20px;
+}
+
+.tabs__nav {
+  border-bottom: 2px solid #999999;
+  margin-bottom: 37px;
+}
+
+.tabs__link {
+  font-family: "Rajdhani-bold", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 64px;
+  color: #343434;
+  padding: 0 30px;
+  transition: all .5s;
+}
+
+.tabs__link:hover {
+  border-bottom: 5px solid #FF2E63;
+}
+
+.tabs__title {
+  font-family: "Rajdhani-bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  color: #252A34;
+  margin-bottom: 15px;
+}
+
+.form__controls {
+  margin-bottom: 15px;
+}
+
+.form__login-title {
+  font-family: "Open-Sans-regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #343434;
+  margin-bottom: 10px;
+}
+
+.form__input {
+  width: 390px;
+  height: 35px;
+  border: 1px solid #999999;
+  border-radius: 5px;
+  padding: 0 15px;
+}
+
+.form__input-checkbox {
+  width: 20px;
+  height: 20px;
+  background: #346CD9;
+  border: 1px solid #346CD9;
+  border-radius: 4px;
+  margin-right: 7px;
+}
+
+.form__input-50 {
+  width: 245px;
+  margin: 0 5px;
+}
+
+.form__input_register {
+  width: 500px;
+}
+
+.form__forgot {
+  margin-bottom: 15px;
+}
+
+.form__forgot-link {
+  font-family: "Open-Sans-regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #346CD9;
+}
+
+.form__label-checkbox {
+  font-family: "Open-Sans-regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #343434;
+}
+
+.form__gender {
+  margin-right: 20px;
+}
+
+.form__gender_radio {
+  background: #FFFFFF;
+  border: 1px solid #999999;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  position: relative;
+  top: 5px;
+}
+
+.form__button {
+  font-family: "Open-Sans-regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+  background: #FF2E63;
+  border-radius: 5px;
+  padding: 8px 42px 10px;
+  border: inherit;
+}
+
+.form__info {
+  font-family: "Open-Sans-regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #999999;
+  max-width: 410px;
+  margin: 0 auto 40px;
+}
+
+.form__info-link {
+  color: #346CD9;
 }
