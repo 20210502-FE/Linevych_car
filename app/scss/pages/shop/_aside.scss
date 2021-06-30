@@ -2,6 +2,12 @@
     margin-right: 29px;
     // position: sticky;
     // top: 0;
+    @include respond-to(tablet-landscape) {
+        display: flex;
+        justify-content: center;
+        flex-basis: 100%;
+        max-width: 100%;
+    }
     &__title {
         font-size: 20px;
         line-height: 26px;
@@ -21,6 +27,11 @@
     }
     &__price {
         margin-bottom: 26px;
+        &-content {
+            @include respond-to(desktop) {
+                flex-wrap: wrap;
+            }
+        }
         &-title {
             font-family: $o-font-regular, sans-serif;
             font-style: normal;
@@ -34,6 +45,9 @@
             padding: 0 11px;
             position: relative;
             top: 30px;
+            @include respond-to(desktop) {
+                display: none;
+            }
         }
     }
     &__brands {
@@ -120,6 +134,9 @@
     border-radius: 10px;
     padding: 27px 20px 30px;
     margin-bottom: 27px;
+    @include respond-to(tablet-landscape) {
+        margin-right: 15px;
+    }
     &__item {
         font-family: $o-font-regular, sans-serif;
         font-style: normal;
@@ -135,6 +152,11 @@
         height: 35px;
         &:focus {
             outline: none;
+        }
+    }
+    &__name {
+        @include respond-to(tablet-portrait) {
+            display: inline;
         }
     }
 }

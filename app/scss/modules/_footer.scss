@@ -1,10 +1,21 @@
 .footer {
     background-color: $color-mariner;
+    &__inner {
+        @include respond-to(tablet-landscape) {
+            display: inline;
+        }
+    }
     &__logo {
         padding: 16px 0 17px;
         max-width: 158px;
+        @include respond-to(phone-only) {
+            padding: 5px 0 0;
+        }
     }
     &__menu {
         padding-top: 15px;
+        @include respond-to(tablet-landscape) {
+            display: flex;
+        }
     }
 }

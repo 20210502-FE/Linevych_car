@@ -13,14 +13,14 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="flex flex_space-between">
+            <div class="header__content flex flex_space-between">
                 <a href="index.html"><img class="logo header__logo" src="assets/images/LOGOAuto.png" alt="logo"></a>
                 <div>
                     <nav class="menu header__menu">
                         <ul class="menu__items flex flex_space-between">
                             <li class="menu__item"><a class="menu__item-link" href="index.html">Home</a></li>
                             <li class="menu__item"><a class="menu__item-link" href="#">About us</a></li>
-                            <li class="menu__item"><a class="menu__item-link" href="#">Shop</a></li>
+                            <li class="menu__item"><a class="menu__item-link" href="shop.html">Shop</a></li>
                             <li class="menu__item"><a class="menu__item-link" href="#">Blog</a></li>
                             <li class="menu__item"><a class="menu__item-link" href="#">Contacts</a></li>
                             <li class="menu__item"><a class="menu__item-link" href="#">How it Works</a></li>
@@ -34,13 +34,13 @@
             </div>
         </div>
     </header>
-    <main>
-        <div class="container flex">
+    <main class="main">
+        <div class="main__content container flex">
             <aside class="aside flex_basis-20">
                 <form class="form" action="#" method="get">
                     <div class="aside__price">
                         <h5 class="title aside__title aside__title-after">Price</h5>
-                        <div class="flex flex_space-between">
+                        <div class="aside__price-content flex flex_space-between">
                             <div>
                                 <p class="aside__price-title">Min</p>
                                 <input class="form__item aside__price-form aside__price-form_left" type="number" min="0"
@@ -273,24 +273,29 @@
         </div>
     </main>
     <footer class="footer">
-        <div class="container flex flex_space-between">
-            <a href="#"><img class="logo footer__logo" src="assets/images/Logo-footer.png" alt="logo"></a>
-            <div>
-                <nav class="menu">
-                    <ul class="menu__items flex flex_space-between footer__menu">
-                        <li class="menu__item"><a class="menu__item-link menu__item-link-footer"
-                                href="index.html">Home</a></li>
-                        <li class="menu__item"><a class="menu__item-link menu__item-link-footer" href="#">About us</a>
-                        </li>
-                        <li class="menu__item"><a class="menu__item-link menu__item-link-footer"
-                                href="shop.html">Shop</a></li>
-                        <li class="menu__item"><a class="menu__item-link menu__item-link-footer" href="#">Blog</a></li>
-                        <li class="menu__item"><a class="menu__item-link menu__item-link-footer" href="#">Contacts</a>
-                        </li>
-                        <li class="menu__item"><a class="menu__item-link menu__item-link-footer" href="#">How it
-                                Works</a></li>
-                    </ul>
-                </nav>
+        <div class="container">
+            <div class="footer__inner flex flex_space-between">
+                <a href="#"><img class="logo footer__logo" src="assets/images/Logo-footer.png" alt="logo"></a>
+                <div>
+                    <nav class="menu">
+                        <ul class="menu__items flex flex_space-between footer__menu">
+                            <li class="menu__item"><a class="menu__item-link menu__item-link-footer" href="#">Home</a>
+                            </li>
+                            <li class="menu__item"><a class="menu__item-link menu__item-link-footer" href="#">About
+                                    us</a>
+                            </li>
+                            <li class="menu__item"><a class="menu__item-link menu__item-link-footer"
+                                    href="shop.html">Shop</a></li>
+                            <li class="menu__item"><a class="menu__item-link menu__item-link-footer" href="#">Blog</a>
+                            </li>
+                            <li class="menu__item"><a class="menu__item-link menu__item-link-footer"
+                                    href="#">Contacts</a>
+                            </li>
+                            <li class="menu__item"><a class="menu__item-link menu__item-link-footer" href="#">How it
+                                    Works</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </footer>

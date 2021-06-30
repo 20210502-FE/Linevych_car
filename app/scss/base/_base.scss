@@ -51,6 +51,12 @@ body {
 .menu {
     &__item {
         padding: 0 14px;
+        @include respond-to(desktop) {
+            margin-bottom: 10px;;
+        }
+        @include respond-to(tablet-landscape) {
+            padding: 0 5px;
+        }
         &-link {
             font-family: $o-font-600, sans-serif;
             font-style: normal;
@@ -61,6 +67,9 @@ body {
             transition: all 1s;
             &:focus {
                 font-family: $o-font-bold, sans-serif;
+            }
+            @include respond-to(phone-only) {
+                font-size: 10px;
             }
             &-footer {
                 color: $color-white;

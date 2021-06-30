@@ -28,4 +28,7 @@
 .banner__btn {
     padding: 14px 33px;
     border-radius: 5px;
+    @include respond-to(tablet-portrait) {
+        padding: 10px 15px;
+    }
 }

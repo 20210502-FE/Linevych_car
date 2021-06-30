@@ -2,6 +2,12 @@
     &__nav {
         border-bottom: 2px solid $color-dusty-grey;
         margin-bottom: 37px;
+        @include respond-to(tablet-portrait) {
+            margin-bottom: 20px;
+            }
+    }
+    &__content {
+        margin-bottom: 100px;
     }
     &__link {
         font-family: $r-font-bold, sans-serif;
@@ -12,8 +18,15 @@
         color: $color-mine-shaft;
         padding: 0 30px;        
         transition: all .5s;
+        @include respond-to(tablet-portrait) {
+            font-size: 36px;
+            line-height: 40px;
+            }
         &:hover {
             border-bottom: 5px solid $color-redical-red;
+            @include respond-to(tablet-portrait) {
+                border-bottom: 3px solid $color-redical-red;
+                }
         }
     }
     &__title {
@@ -42,12 +55,20 @@
             margin-bottom: 10px;
         }
     }
+    &__password {
+        @include respond-to(tablet-portrait) {
+        display: inline;
+        }
+    }
     &__input {
         width: 390px;
         height: 35px;
         border: 1px solid $color-dusty-grey;
         border-radius: 5px;
         padding: 0 15px;
+        @include respond-to(phone-only) {
+           width: 200px;
+        }
         &-checkbox {
             width: 20px;
             height: 20px;
@@ -63,6 +84,12 @@
         }
         &_register {
             width: 500px;
+            @include respond-to(tablet-landscape) {
+                width: 450px;
+            }
+            @include respond-to(phone-only) {
+                width: 300px;
+            }
         }
     }
     &__forgot {

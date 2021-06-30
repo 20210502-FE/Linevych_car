@@ -1,7 +1,13 @@
 .products {
     margin-bottom: 100px;
+    @include respond-to(tablet-portrait) {
+        margin-bottom: 30px;
+    }
     &__content {
         margin-bottom: 47px;
+        @include respond-to(tablet-portrait) {
+            flex-wrap: wrap;
+        }
     }
     &__link {
         font-family: $o-font-600;
@@ -31,11 +37,19 @@
     transition: all .5s;
     margin-bottom: 15px;
     color: $color-charade;
+    @include respond-to(tablet-landscape) {
+        margin: 10px 15px;;
+    }
     &:hover {
         transform: scale(1.1);
     }
     &__content {
         padding-left: 20px;
+    }
+    &__inner {
+        @include respond-to(tablet-landscape) {
+            justify-content: center;
+        }
     }
     &__arrow {   
         background-color: $color-mariner;

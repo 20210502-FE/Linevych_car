@@ -13,7 +13,7 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="flex flex_space-between">
+            <div class="header__content flex flex_space-between">
                 <a href="#"><img class="logo header__logo" src="assets/images/LOGOAuto.png" alt="logo"></a>
                 <div>
                     <nav class="menu header__menu">
@@ -29,7 +29,7 @@
                 </div>
                 <div class="header__buttons">
                     <a class="button header__button" href="login.html">Login</a>
-                    <a class="button header__button" href="#">Register</a>
+                    <a class="button header__button" href="register.html">Register</a>
                 </div>
             </div>
         </div>
@@ -52,7 +52,7 @@
                             <div class="tabs__title text-center">Create an Account</div>
                             <form class="flex flex_center" action="#" method="get">
                                 <div class="form__login">
-                                    <div class="flex flex_center">
+                                    <div class="form__name flex flex_center">
                                         <div class="form__controls">
                                             <p class="form__login-title">First Name</p>
                                             <input class="form__input form__input-50" minlength="2" type="text"
@@ -79,7 +79,7 @@
                                                 type="radio" name="gender" value="male">FeMale
                                         </div>
                                     </div>
-                                    <div class="flex flex_center">
+                                    <div class="form__password flex flex_center">
                                         <div class="form__controls">
                                             <p class="form__login-title">Password</p>
                                             <input class="form__input form__input-50" required type="password"
@@ -109,23 +109,29 @@
         </div>
     </main>
     <footer class="footer">
-        <div class="container flex flex_space-between">
-            <a href="#"><img class="logo footer__logo" src="assets/images/Logo-footer.png" alt="logo"></a>
-            <div>
-                <nav class="menu">
-                    <ul class="menu__items flex flex_space-between footer__menu">
-                        <li class="menu__item"><a class="menu__item-link menu__item-link-footer" href="#">Home</a></li>
-                        <li class="menu__item"><a class="menu__item-link menu__item-link-footer" href="#">About us</a>
-                        </li>
-                        <li class="menu__item"><a class="menu__item-link menu__item-link-footer"
-                                href="shop.html">Shop</a></li>
-                        <li class="menu__item"><a class="menu__item-link menu__item-link-footer" href="#">Blog</a></li>
-                        <li class="menu__item"><a class="menu__item-link menu__item-link-footer" href="#">Contacts</a>
-                        </li>
-                        <li class="menu__item"><a class="menu__item-link menu__item-link-footer" href="#">How it
-                                Works</a></li>
-                    </ul>
-                </nav>
+        <div class="container">
+            <div class="footer__inner flex flex_space-between">
+                <a href="#"><img class="logo footer__logo" src="assets/images/Logo-footer.png" alt="logo"></a>
+                <div>
+                    <nav class="menu">
+                        <ul class="menu__items flex flex_space-between footer__menu">
+                            <li class="menu__item"><a class="menu__item-link menu__item-link-footer" href="#">Home</a>
+                            </li>
+                            <li class="menu__item"><a class="menu__item-link menu__item-link-footer" href="#">About
+                                    us</a>
+                            </li>
+                            <li class="menu__item"><a class="menu__item-link menu__item-link-footer"
+                                    href="shop.html">Shop</a></li>
+                            <li class="menu__item"><a class="menu__item-link menu__item-link-footer" href="#">Blog</a>
+                            </li>
+                            <li class="menu__item"><a class="menu__item-link menu__item-link-footer"
+                                    href="#">Contacts</a>
+                            </li>
+                            <li class="menu__item"><a class="menu__item-link menu__item-link-footer" href="#">How it
+                                    Works</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </footer>

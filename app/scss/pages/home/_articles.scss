@@ -1,12 +1,24 @@
 .articles {
     margin-bottom: 100px;
+    @include respond-to(tablet-landscape) {
+        margin-bottom: 30px;
+    }
     &__title {
         margin-bottom: 40px;
+    }
+    &__figures {
+        @include respond-to(desktop) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
     &__content {
         box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
         border-radius: 10px;
         max-width: 270px;
+        @include respond-to(desktop) {
+            margin: 0 10px 10px 0;
+        }
         &-img {
             max-width: 270px;
             margin-bottom: 20px;
