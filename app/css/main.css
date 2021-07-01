@@ -536,6 +536,7 @@ body {
 @media only screen and (max-width: 600px) {
   .work__items {
     flex-wrap: wrap;
+    margin-right: 0;
   }
 }
 
