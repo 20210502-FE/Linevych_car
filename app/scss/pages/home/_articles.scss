@@ -6,10 +6,10 @@
     &__title {
         margin-bottom: 40px;
     }
-    &__figures {
+    &__description {
         @include respond-to(desktop) {
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-evenly;
         }
     }
     &__content {

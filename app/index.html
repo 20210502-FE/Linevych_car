@@ -13,8 +13,8 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="header__content flex flex_space-between">
-                <a href="#"><img class="logo header__logo" src="assets/images/LOGOAuto.png" alt="logo"></a>
+            <div class="header__content flex flex_space-between flex_align-end">
+                <a href="/"><img class="logo header__logo" src="assets/images/LOGOAuto.png" alt="logo"></a>
                 <div>
                     <nav class="menu header__menu">
                         <ul class="menu__items flex flex_space-between">
@@ -27,9 +27,9 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="header__buttons">
-                    <a class="button header__button" href="login.html">Login</a>
-                    <a class="button header__button" href="register.html">Register</a>
+                <div class="auth-block">
+                    <a class="button auth-block__button" href="login.html">Login</a>
+                    <a class="button auth-block__button" href="register.html">Register</a>
                 </div>
             </div>
         </div>
@@ -144,25 +144,25 @@
                     How it works
                 </h2>
                 <div class="work__items flex flex_space-between">
-                    <div class="work__item text-center flex_basis-25">
+                    <div class="work__item text-center">
                         <img class="work__item-img" src="assets/images/work-finger.svg" alt="choose">
                         <h5 class="work__item-title">1. Selection of the Car</h5>
                         <p class="work__item-text"> We select and offer several car options from US auctions based on
                             your budget and requirements.</p>
                     </div>
-                    <div class="work__item text-center flex_basis-25">
+                    <div class="work__item text-center">
                         <img class="work__item-img" src="assets/images/work-ticket.svg" alt="ticket">
                         <h5 class="work__item-title">2. Concluding the Agreement</h5>
                         <p class="work__item-text"> The conclusion of the contract gives the opportunity not to worry
                             about the parties for the fulfillment of their obligations.</p>
                     </div>
-                    <div class="work__item text-center flex_basis-25">
+                    <div class="work__item text-center">
                         <img class="work__item-img" src="assets/images/work-pay.svg" alt="pay">
                         <h5 class="work__item-title">3. Payment through the Bank</h5>
                         <p class="work__item-text"> Payments are made by invoice, SWIFT transfer through the Bank, which
                             guarantees the transparency and formality of the transaction..</p>
                     </div>
-                    <div class="work__item text-center flex_basis-25">
+                    <div class="work__item text-center">
                         <img class="work__item-img" src="assets/images/work-finish.svg" alt="finish">
                         <h5 class="work__item-title">4. Car transfer to the customer</h5>
                         <p class="work__item-text"> Transfer / Delivery of a car to the happy buyer that saved 35-50%
@@ -190,51 +190,51 @@
                 <h2 class="title articles__title">
                     Latest articles
                 </h2>
-                <div class="articles__figures flex flex_space-between">
-                    <figure class="articles__content flex_basis-25">
+                <div class="articles__description flex flex_space-between">
+                    <article class="articles__content flex_basis-25">
                         <img class="articles__content-img" src="assets/images/articles-1.jpg" alt="porshe">
-                        <figcaption class="articles__inner">
+                        <div class="articles__inner">
                             <h5 class="title articles__inner-title">
                                 Ferrari 458
                             </h5>
                             <p class="product__text articles__inner-text">
                                 12 November 2020
                             </p>
-                        </figcaption>
-                    </figure>
-                    <figure class="articles__content flex_basis-25">
+                        </div>
+                    </article>
+                    <article class="articles__content flex_basis-25">
                         <img class="articles__content-img" src="assets/images/articles-2.jpg" alt="porshe">
-                        <figcaption class="articles__inner">
+                        <div class="articles__inner">
                             <h5 class="title articles__inner-title">
                                 Aquila Gullwing
                             </h5>
                             <p class="product__text articles__inner-text">
                                 Aquila Gullwing
                             </p>
-                        </figcaption>
-                    </figure>
-                    <figure class="articles__content flex_basis-25">
+                        </div>
+                    </article>
+                    <article class="articles__content flex_basis-25">
                         <img class="articles__content-img" src="assets/images/articles-3.jpg" alt="porshe">
-                        <figcaption class="articles__inner">
+                        <div class="articles__inner">
                             <h5 class="title articles__inner-title">
                                 2020 Audi S5 Coupe
                             </h5>
                             <p class="product__text articles__inner-text">
                                 2020 Audi S5 Coupe
                             </p>
-                        </figcaption>
-                    </figure>
-                    <figure class="articles__content flex_basis-25">
+                        </div>
+                    </article>
+                    <article class="articles__content flex_basis-25">
                         <img class="articles__content-img" src="assets/images/articles-4.jpg" alt="porshe">
-                        <figcaption class="articles__inner">
+                        <div class="articles__inner">
                             <h5 class="title articles__inner-title">
                                 Ferrari Purosangue SUV
                             </h5>
                             <p class="product__text articles__inner-text">
                                 25 September 2020
                             </p>
-                        </figcaption>
-                    </figure>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -243,26 +243,23 @@
         <div class="container">
             <div class="footer__inner flex flex_space-between">
                 <a href="#"><img class="logo footer__logo" src="assets/images/Logo-footer.png" alt="logo"></a>
-                <div>
-                    <nav class="menu">
-                        <ul class="menu__items flex flex_space-between footer__menu">
-                            <li class="menu__item"><a class="menu__item-link menu__item-link-footer" href="#">Home</a>
-                            </li>
-                            <li class="menu__item"><a class="menu__item-link menu__item-link-footer" href="#">About
-                                    us</a>
-                            </li>
-                            <li class="menu__item"><a class="menu__item-link menu__item-link-footer"
-                                    href="shop.html">Shop</a></li>
-                            <li class="menu__item"><a class="menu__item-link menu__item-link-footer" href="#">Blog</a>
-                            </li>
-                            <li class="menu__item"><a class="menu__item-link menu__item-link-footer"
-                                    href="#">Contacts</a>
-                            </li>
-                            <li class="menu__item"><a class="menu__item-link menu__item-link-footer" href="#">How it
-                                    Works</a></li>
-                        </ul>
-                    </nav>
-                </div>
+                <nav class="menu">
+                    <ul class="menu__items flex flex_space-between footer__menu">
+                        <li class="menu__item"><a class="menu__item-link menu__item-link-footer" href="#">Home</a>
+                        </li>
+                        <li class="menu__item"><a class="menu__item-link menu__item-link-footer" href="#">About
+                                us</a>
+                        </li>
+                        <li class="menu__item"><a class="menu__item-link menu__item-link-footer"
+                                href="shop.html">Shop</a></li>
+                        <li class="menu__item"><a class="menu__item-link menu__item-link-footer" href="#">Blog</a>
+                        </li>
+                        <li class="menu__item"><a class="menu__item-link menu__item-link-footer" href="#">Contacts</a>
+                        </li>
+                        <li class="menu__item"><a class="menu__item-link menu__item-link-footer" href="#">How it
+                                Works</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </footer>

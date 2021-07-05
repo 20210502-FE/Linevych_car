@@ -1,7 +1,5 @@
 .aside {
     margin-right: 29px;
-    // position: sticky;
-    // top: 0;
     @include respond-to(tablet-landscape) {
         display: flex;
         justify-content: center;

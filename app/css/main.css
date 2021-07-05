@@ -221,12 +221,12 @@ body {
   background-color: #FF2E63;
 }
 
-.header__button {
+.auth-block__button {
   padding: 8px 23px 10px;
   transition: all .7s;
 }
 
-.header__button:hover {
+.auth-block__button:hover {
   background-color: #FF2E63;
   color: #fff;
   border-radius: 5px;
@@ -443,6 +443,7 @@ body {
 @media only screen and (max-width: 600px) {
   .products__content {
     flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 }
 
@@ -663,9 +664,9 @@ body {
 }
 
 @media only screen and (max-width: 1200px) {
-  .articles__figures {
+  .articles__description {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
   }
 }
 
@@ -946,7 +947,7 @@ body {
 
 @media only screen and (max-width: 1200px) {
   .shop__items {
-    justify-content: center;
+    justify-content: space-evenly;
     margin-bottom: 10px;
   }
 }
@@ -958,6 +959,24 @@ body {
   max-height: 354px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
+}
+
+@media screen and (max-width: 1120px) {
+  .shop__item {
+    max-width: 240px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .shop__item {
+    max-width: 198px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .shop__item {
+    max-width: 270px;
+  }
 }
 
 .shop__price {
@@ -1083,7 +1102,7 @@ body {
 }
 
 .form__controls {
-  margin-bottom: 15px;
+  padding: 0 5px 15px;
 }
 
 .form__login-title {
@@ -1127,7 +1146,6 @@ body {
 
 .form__input-50 {
   width: 245px;
-  margin: 0 5px;
 }
 
 .form__input_register {

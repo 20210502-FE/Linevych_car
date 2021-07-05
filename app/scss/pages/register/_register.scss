@@ -42,7 +42,7 @@
 
 .form {
     &__controls {
-        margin-bottom: 15px;
+        padding: 0 5px 15px;
     }
     &__login {
         &-title {
@@ -79,7 +79,7 @@
         }
         &-50 {
             width: 245px;
-            margin: 0 5px;
+            
             
         }
         &_register {

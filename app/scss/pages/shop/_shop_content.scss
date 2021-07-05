@@ -20,7 +20,7 @@
     &__items {
         margin-bottom: 83px;
         @include respond-to(desktop) {
-            justify-content: center;
+            justify-content: space-evenly;
             margin-bottom: 10px;
         }
     }
@@ -31,6 +31,15 @@
         max-height: 354px;
         box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
         border-radius: 10px;
+        @media screen and (max-width: 1120px) {
+            max-width: 240px;
+        }
+        @media screen and (max-width: 1025px) {
+            max-width: 198px;
+        }
+        @include respond-to(tablet-landscape) {
+            max-width: 270px;
+        }
     }
     &__price {
         margin-bottom: 10px;
