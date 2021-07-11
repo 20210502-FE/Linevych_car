@@ -1,5 +1,5 @@
 .articles {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
     @include respond-to(tablet-landscape) {
         margin-bottom: 30px;
     }

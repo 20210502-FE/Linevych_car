@@ -1,13 +1,6 @@
-.main {
-    &__content {
-        @include respond-to(tablet-landscape) {
-            flex-wrap: wrap;
-        }
-    }
-}
-
 .shop {
     &__content {
+        padding: 0 15px;
         margin-bottom: 60px;
         @include respond-to(desktop) {
             margin-bottom: 20px;
@@ -16,19 +9,23 @@
     &__title {
         line-height: 64px;
         margin-bottom: 27px;
+        @include respond-to(tablet-landscape) {
+            text-align: center;
+        }
     }
     &__items {
-        margin-bottom: 83px;
-        @include respond-to(desktop) {
+        margin: -15px -15px 68px;
+        @media screen and (max-width: 1240px) {
             justify-content: space-evenly;
             margin-bottom: 10px;
         }
     }
+    &__box {
+    padding: 15px;
+    }
     &__item {
-        margin-right: 30px;
-        margin-bottom: 30px;
-        max-width: 270px;
-        max-height: 354px;
+        width: 270px;
+        height: 354px;
         box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
         border-radius: 10px;
         @media screen and (max-width: 1120px) {
@@ -36,15 +33,52 @@
         }
         @media screen and (max-width: 1025px) {
             max-width: 198px;
+            max-height: 320px;
         }
         @include respond-to(tablet-landscape) {
-            max-width: 270px;
+            width: 270px;
+            height: 354px;
         }
     }
+    &__img {
+        max-width: 270px;
+        max-height: 160px;
+    }
+    &__content {
+        margin-bottom: 47px;
+        @include respond-to(tablet-portrait) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__title {
+        font-size: 20px;
+        line-height: 26px;
+        color: $color-charade;
+        margin-top: 13px;
+        margin-bottom: 11px;
+    }
     &__price {
+        font-size: 30px;
+        line-height: 38px;
         margin-bottom: 10px;
+        &_old {
+            font-family: $r-font-regular, sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 26px;
+            color: $color-dusty-grey;
+            text-decoration: line-through;
+        }
     }
     &__text {
+        font-family: $o-font-regular, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        color: $color-mine-shaft;
         margin-bottom: 22px;
     }
     &__button {
@@ -61,45 +95,46 @@
             border-radius: 5px;
         }
     }
-    &__pages {
-        &-link, &-item {
-            padding: 0 10px;
-            font-family: $o-font-regular, sans-serif;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 18px;
-            line-height: 25px;
-            color: $color-mine-shaft;
-            transition: all .5s;
-        }
-        &-link {
-            &:hover {
-                color: $color-mariner;
-            }
-        }
-        &-dots {
-            position: relative;
-            bottom: -7px;
-        }
-        &-btn {
+}
+
+.pagination {
+    &__link, &__item {
+        padding: 0 10px;
+        font-family: $o-font-regular, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        color: $color-mine-shaft;
+        transition: all .5s;
+    }
+    &__link {
+        &:hover {
             color: $color-mariner;
-            padding: 10px 47px 10px 16px;
-            border: 1px solid $color-mariner;
-            border-radius: 5px;
-            position: relative;
-            @include respond-to(tablet-landscape) {
-                display: none;
-            }
-            &::after {
-                content: '';
-                width: 10px;
-                height: 18px;
-                position: absolute;
-                background-image: url(../assets/icons/pages-arrow.svg);
-                background-repeat: no-repeat;
-                top: 18px;
-                right: 20px;
-            }
+        }
+    }
+    &__dots {
+        position: relative;
+        bottom: -7px;
+    }
+    &__btn {
+        color: $color-mariner;
+        padding: 10px 47px 10px 16px;
+        border: 1px solid $color-mariner;
+        border-radius: 5px;
+        position: relative;
+        @include respond-to(tablet-landscape) {
+            display: none;
+        }
+        &::after {
+            content: '';
+            width: 10px;
+            height: 18px;
+            position: absolute;
+            background-image: url(../assets/icons/pages-arrow.svg);
+            background-repeat: no-repeat;
+            top: 18px;
+            right: 20px;
         }
     }
 }

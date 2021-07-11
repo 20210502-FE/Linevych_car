@@ -13,7 +13,8 @@
         margin-right: -56px;
         @include respond-to(tablet-portrait) {
             flex-wrap: wrap;
-            margin-right: 0;
+            justify-content: space-evenly;
+            margin: 0;
         }
     }
     &__item {

@@ -8,6 +8,11 @@ html, body {
     height: 100%;
 }
 
+.page-wrapper {
+    position: relative;
+    min-height: 100%;
+}
+
 li {
     list-style: none;
 }
@@ -28,7 +33,8 @@ img {
 }
 
 body {
-    overflow-x: hidden;
+    height: 100%;
+    position: relative;
 }
 
 .title {
@@ -45,78 +51,5 @@ body {
     }
     &_red {
         color: $color-redical-red;
-    }
-}
-
-.menu {
-    &__item {
-        padding: 0 14px;
-        @include respond-to(desktop) {
-            margin-bottom: 10px;;
-        }
-        @include respond-to(tablet-landscape) {
-            padding: 0 5px;
-        }
-        &-link {
-            font-family: $o-font-600, sans-serif;
-            font-style: normal;
-            font-weight: 800;
-            font-size: 14px;
-            line-height: 19px;
-            color: $color-charade;
-            transition: all 1s;
-            &:focus {
-                font-family: $o-font-bold, sans-serif;
-            }
-            @include respond-to(phone-only) {
-                font-size: 10px;
-            }
-            &-footer {
-                color: $color-white;
-                transition: all .5s;
-                &:focus {
-                    font-family: $o-font-bold, sans-serif;
-                }
-            }
-        }
-    }
-}
-
-.product {
-    &__img {
-        max-width: 270px;
-        max-height: 160px;
-    }
-    &__title {
-        font-size: 20px;
-        line-height: 26px;
-        color: $color-charade;
-        margin-top: 13px;
-        margin-bottom: 11px;
-        &_height {
-            height: 52px;
-        }
-    }
-    &__price {
-        font-size: 30px;
-        line-height: 38px;
-        margin-bottom: 17px;
-        
-        &-old {
-            font-family: $r-font-regular, sans-serif;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 26px;
-            color: $color-dusty-grey;
-        }
-    }
-    &__text {
-        font-family: $o-font-regular, sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 19px;
-        color: $color-mine-shaft;
     }
 }

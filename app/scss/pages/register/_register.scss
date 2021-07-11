@@ -43,6 +43,11 @@
 .form {
     &__controls {
         padding: 0 5px 15px;
+        display: flex;
+        flex-direction: column;
+        &_checkbox {
+            flex-direction: inherit;
+        } 
     }
     &__login {
         &-title {
@@ -78,14 +83,12 @@
             margin-right: 7px;
         }
         &-50 {
-            width: 245px;
-            
-            
+            width: 245px;   
         }
         &_register {
             width: 500px;
-            @include respond-to(tablet-landscape) {
-                width: 450px;
+            @include respond-to(tablet-portrait) {
+                max-width: 245px;
             }
             @include respond-to(phone-only) {
                 width: 300px;
