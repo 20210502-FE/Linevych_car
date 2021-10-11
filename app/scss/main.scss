@@ -1,4 +1,5 @@
 @import "utility/variables";
+@import "utility/mixins";
 @import "fonts";
 
 @import "base/base";
@@ -7,3 +8,12 @@
 
 
 @import "modules/header";
+@import "pages/home/banner";
+@import "pages/home/products";
+@import "pages/home/work";
+@import "pages/home/comment";
+@import "pages/home/articles";
+@import "modules/footer";
+@import "pages/shop/aside";
+@import "pages/shop/shop_content";
+@import "pages/register/register";

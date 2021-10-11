@@ -8,6 +8,11 @@ html, body {
     height: 100%;
 }
 
+.page-wrapper {
+    position: relative;
+    min-height: 100%;
+}
+
 li {
     list-style: none;
 }
@@ -28,6 +33,23 @@ img {
 }
 
 body {
-    overflow-x: hidden;
+    height: 100%;
+    position: relative;
 }
 
+.title {
+    font-family: $r-font-bold, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 46px;
+    color: $color-mine-shaft;
+    &_big {
+        font-size: 50px;
+        line-height: 60px;
+        color: $color-mine-shaft;
+    }
+    &_red {
+        color: $color-redical-red;
+    }
+}
